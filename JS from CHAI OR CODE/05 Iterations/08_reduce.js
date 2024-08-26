@@ -15,16 +15,17 @@ console.log(myTotal)
 const shoppingCart = [
     {
         itemName: "Alu",
-        price: "3"
+        price: 15
     },
     {
         itemName: "Piyaj",
-        price: "9"
+        price: 5
     },
     {
         itemName: "Carrot",
-        price: "10"
+        price: 10
     },
 ]
 
-shoppingCart.reduce( () => (),)
+const priceToPay = shoppingCart.reduce( (acc, item) => acc + item.price,0)
+console.log(priceToPay)
