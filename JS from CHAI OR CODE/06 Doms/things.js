@@ -28,3 +28,17 @@ title.innerHTML
 // 'DOM learning Guys'
 title.innerText
 // 'DOM learning Guys'
+
+// ------------------------------------------
+document.querySelector('ul')
+{/* <ul>​…​</ul>​ */}
+const myul = document.querySelector('ul')
+// undefined
+const tgreen = myul.querySelector('li')
+// undefined
+tgreen.style.backgroundColor = 'green'
+// 'green'
+tgreen.style.padding = '23px'
+// '23px'
+tgreen.innerText = 'five'
+// 'five'
