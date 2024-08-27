@@ -1,6 +1,6 @@
-console.log(parseInt(Math.random() * 100 + 1));
+const randomNumber = parseInt(Math.random() * 100 + 1);
 
-const submit = document.querySelector('$subt')
+const submit = document.querySelector('#subt')
 const userInput = document.querySelector('#guessField')
 const guessSlot = document.querySelector('.guesses')
 const remaining = document.querySelector('.lastResult')
@@ -12,4 +12,62 @@ const p = document.createElement('p')
 let prevGuess = []
 let numGuess = 1
 let playGame = true
+
+if (playGame) {
+    submit.addEventListener('click', function(e) {
+        e.preventDefault()
+        const guess = parseInt(userInput.value)
+        console.log(guess)
+        validateGuess(guess)  
+    });
+}
+
+function validateGuess(guess) {
+    if(isNaN(guess)){
+        alert('Please enter a valid number')
+    } else if (guess<1) {
+        alert('Please enter a number more then 1')
+    } else if (guess>100) {
+        alert('Please enter a Number less then 100')
+    } else {
+        prevGuess.push(guess)
+        if(numGuess === 11){
+            displayGuess(guess)
+            displayMessage(`Game Over !! Random number was ${randomNumber}`)
+            endGame()
+        } else {
+            displayGuess(guess)
+            checkGuess(guess)
+        }
+    }
+}
+
+function checkGuess(guess) {
+    if(guess === randomNumber) {
+        displayMessage("You Guessed it Right")
+        endGame()
+    } else if (guess < randomNumber) {
+        displayMessage("Number is TOOO LOWW !!!")
+
+    } else if (guess > randomNumber) {
+        displayMessage("Number is TOOO HIGHH !!!")
+
+    }
+}
+
+function displayGuess(guess) {
+//
+}
+
+function displayMessage(message) {
+//
+}
+
+function endGame () {
+//
+}
+
+function newGame () {
+//
+}
 
