@@ -21,16 +21,15 @@ form.addEventListener('submit', function(e) {
         document.querySelector('#results').style.color = "red"
         results.innerHTML = `<span>${bmi}</span>`
     }
-    // if()) {
-    //     results.innerHTML = `Please give a valid Height ${Height}`;
-    // } else if ()) 
-    // {
-    //     results.innerHTML = `Please give a valid Weight ${Weight}`;
-    // } else 
-    // {
-    //     // show the result 
-    //     weight-guide.innerHTML = `<span>${bmi}</span>`
-    // }
-    // // results.innerHTML = `${height}`
+    const calc = document.querySelector('#calc')
+    if(results.innerText<18.6) {
+        calc.innerHTML = "<span><b><i>~ You are Under Weight</i></b></span>";
+    } else if (results.innerText>=18.6 && results.innerText<=24)
+    {
+        calc.innerHTML = "<span><b><i>~ You are Normal Range</i></b></span>";
+    } else 
+    {
+        calc.innerHTML = "<span><b><i>~ You are Over Weight</i></b></span>";
+    }
 
 })
