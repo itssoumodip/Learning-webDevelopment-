@@ -1,57 +1,86 @@
-/* Global styles */
-html {
-    margin: 0;
-    box-sizing: border-box; /* Add box-sizing to ensure consistent layout */
-  }
-  
-  * {
-    box-sizing: inherit; /* Inherit box-sizing from html element */
-  }
-  
-  /* Canvas styles */
-  .canvas {
-    margin: 100px auto; /* Remove unnecessary bottom margin */
-    width: 80%;
-    text-align: center;
-    padding: 20px; /* Add padding for better layout */
-    background-color: #f7f7f7; /* Add a light gray background */
-    border: 1px solid #ddd; /* Add a subtle border */
-    border-radius: 10px; /* Add a slight rounded corner */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-  }
-  
-  /* Button styles */
-  .button {
-    width: 100px;
-    height: 100px;
+*{
+    margin:0px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
     border: 2px solid black;
-    display: inline-block;
-    margin: 10px; /* Add margin for better spacing */
-    cursor: pointer; /* Add cursor pointer for better UX */
-    transition: background-color 0.3s ease; /* Add transition for hover effect */
-  }
-  
-  .button:hover {
-    background-color: #ccc; /* Add hover effect */
-  }
-  
-  /* Color classes */
-  .color-button {
-    background-color: transparent; /* Reset background color */
-  }
-  
-  #grey {
-    background-color: grey;
-  }
-  
-  #white {
-    background-color: white;
-  }
-  
-  #blue {
-    background-color: blue;
-  }
-  
-  #yellow {
-    background-color: yellow;
-  }
+    background-color: #ade7ff;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#height,
+#weight {
+    width: 150px;
+    height: 35px;
+    margin-top: 20px;
+    padding: 5px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#weight-guide {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+#results {
+    font-size: 35px;
+    margin-top: 20px;
+    color: #333;
+    text-align: center;
+}
+
+button {
+    width: 260px;
+    height: 45px;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 5px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    border: 2px solid #212121;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #212121;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #212121;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    #height,
+    #weight,
+    button {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    #results {
+        font-size: 28px;
+    }
+}
