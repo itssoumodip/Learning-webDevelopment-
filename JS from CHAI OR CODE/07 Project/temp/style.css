@@ -1,103 +1,57 @@
+/* Global styles */
 html {
-    font-family: 'Arial', sans-serif;
-}
-
-body {
-    background-color: #212121;
     margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff;
-}
-
-#wrapper {
-    background-color: #474747;
-    border: 3px solid #ffffff;
-    border-radius: 15px;
-    padding: 30px;
-    max-width: 400px;
+    box-sizing: border-box; /* Add box-sizing to ensure consistent layout */
+  }
+  
+  * {
+    box-sizing: inherit; /* Inherit box-sizing from html element */
+  }
+  
+  /* Canvas styles */
+  .canvas {
+    margin: 100px auto; /* Remove unnecessary bottom margin */
+    width: 80%;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-h1 {
-    background-color: #161616;
-    color: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #ddd;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 20px 0;
-}
-#guess{
-    text-transform: uppercase;
-    color: yellow;
-}
-#guessField {
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    font-size: 18px;
-    border: 2px solid #6c6d6d;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-#subt {
-    background-color: #161616;
-    color: #fff;
-    width: 100%;
-    max-width: 300px;
-    padding: 10px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-top: 10px;
-}
-
-    #subt:hover {
-        background-color: #333;
-    }
-
-    .resultParas p {
-        font-size: 16px;
-    }
-
-    .lastResult,
-    .guesses {
-        font-weight: bold;
-        padding: 5px;
-    }
-
-    .lowOrHi {
-        margin-top: 10px;
-    }
-
-    .guesses,
-    .lastResult {
-        color: #fff;
-    }
-
-    @media (max-width: 480px) {
-        #wrapper {
-            width: 90%;
-        }
-    }
+    padding: 20px; /* Add padding for better layout */
+    background-color: #f7f7f7; /* Add a light gray background */
+    border: 1px solid #ddd; /* Add a subtle border */
+    border-radius: 10px; /* Add a slight rounded corner */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+  
+  /* Button styles */
+  .button {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px; /* Add margin for better spacing */
+    cursor: pointer; /* Add cursor pointer for better UX */
+    transition: background-color 0.3s ease; /* Add transition for hover effect */
+  }
+  
+  .button:hover {
+    background-color: #ccc; /* Add hover effect */
+  }
+  
+  /* Color classes */
+  .color-button {
+    background-color: transparent; /* Reset background color */
+  }
+  
+  #grey {
+    background-color: grey;
+  }
+  
+  #white {
+    background-color: white;
+  }
+  
+  #blue {
+    background-color: blue;
+  }
+  
+  #yellow {
+    background-color: yellow;
+  }

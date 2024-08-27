@@ -46,7 +46,7 @@ form {
 }
 #guess{
   text-transform: uppercase;
-  color: yellow;
+  color: rgb(255, 255, 255);
 }
 #guessField {
   width: 100%;
