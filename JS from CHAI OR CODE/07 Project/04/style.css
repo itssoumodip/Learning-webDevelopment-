@@ -59,7 +59,7 @@ form {
   text-align: center;
 }
 
-#subt, #newGame {
+#subt {
   background-color: #161616;
   color: #fff;
   width: 100%;
@@ -71,6 +71,20 @@ form {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#newGame {
+  text-transform: uppercase;
+  display: inline-block; 
+  margin: 20px auto; 
+  padding: 10px 20px; 
+  background-color: #328fa8; 
+  color: #fff; 
+  border-radius: 8px;
+  text-align: center; 
+  cursor: pointer; 
 }
 
   #subt:hover {
