@@ -1,0 +1,83 @@
+body {
+    background-color: #1c1c1c;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+  
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: calc(100vh - 50px); 
+    background-color: #1c1c1c;
+}
+  
+#insert {
+    background-color: #333;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#insert:hover {
+    transform: scale(1.05);
+}
+  
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1.2em;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+  
+th, td {
+    border: 1px solid #444;
+    padding: 12px 15px;
+    text-align: center;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+th {
+    background-color: #555;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+td {
+    background-color: #666;
+}
+  
+tr:nth-child(even) td {
+    background-color: #5a5a5a;
+}
+  
+tr:hover td {
+    background-color: #777;
+    cursor: pointer;
+}
+  
+@media (max-width: 768px) {
+    .key {
+        font-size: 1.5em;
+    }
+    
+    th, td {
+        padding: 8px 10px;
+        font-size: 1em;
+    }
+}
