@@ -17,6 +17,7 @@ let user = {
     email : "user@gmail.com",
     upi : "user@upi"
 }
+console.log(user)
 let user2 = user
 user2.email = "soumodip@gmail.com"
 console.log(user)
