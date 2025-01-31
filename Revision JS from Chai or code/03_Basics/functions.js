@@ -26,3 +26,9 @@ function logUserMes(username="Hitesh")
 
 console.log(logUserMes("Soumodip"));
 console.log(logUserMes());
+
+function calculate(...n) 
+{
+    return n;
+}
+console.log(calculate(5,8));
