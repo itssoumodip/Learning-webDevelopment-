@@ -31,4 +31,13 @@ function calculate(...n)
 {
     return n;
 }
-console.log(calculate(5,8));
+// console.log(calculate(5,8,1,2));
+
+const user = {
+    username: "soumodip",
+    price: 199
+}
+
+function handleObject(anyobject) {
+    
+}
