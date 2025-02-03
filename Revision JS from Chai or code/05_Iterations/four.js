@@ -24,3 +24,8 @@ map.set('IN', "India")
 for (const key in map) {
     console.log(key)
 }
+
+const myNums = [1, 2, 4, 6, 7, 8, 9, 10]
+
+const newNums = myNums.filter ( (num)=> (num>4))
+console.log(newNums);
