@@ -12,3 +12,17 @@ if (true) {
 // console.log(b);
 console.log(c);
 
+function one () {
+    const userName = "soumodip"
+
+    function two () {
+        const website = "youtube"
+        console.log(userName);
+    }
+    console.log(website);
+
+    two();
+}
+
+one();
+
