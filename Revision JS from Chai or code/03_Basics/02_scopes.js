@@ -19,10 +19,29 @@ function one () {
         const website = "youtube"
         console.log(userName);
     }
-    console.log(website);
+    // console.log(website);
 
     two();
 }
 
 one();
 
+
+if (true){
+    const userName = "soumodip"
+    if (userName == "soumodip") {
+        const website = "youtube";
+        console.log(userName + website);
+    }
+    // console.log(website);
+}
+// console.log (userName)
+
+console.log(addone(5));
+function addone (num) {
+    return num + 1;
+}
+const addTwo = function (num) {
+    return num + 2;
+}
+console.log(addTwo(5));
